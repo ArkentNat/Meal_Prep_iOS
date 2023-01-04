@@ -52,7 +52,7 @@ struct RegisterView: View {
                 HStack {
                     Image(systemName: "lock")
 
-                    SecureInputView("Your Email Address", text: self.$password)
+                    SecureInputView("Your Password", text: self.$password)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled(true)
                 }

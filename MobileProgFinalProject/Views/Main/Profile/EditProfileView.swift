@@ -62,7 +62,7 @@ struct EditProfileView: View {
                 HStack {
                     Image(systemName: "envelope")
 
-                    TextField("Username", text: self.$username)
+                    TextField("Email", text: self.$username)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled(true)
                 }

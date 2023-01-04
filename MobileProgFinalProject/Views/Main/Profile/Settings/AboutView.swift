@@ -14,7 +14,7 @@ struct AboutView: View {
                 Text("This application is for Semester 7 Mobile Programming Project of Swiss German University")
                 Spacer()
                     .frame(height:30)
-                Text("Developed by: \nArkent Nathanael \nDave Andersen \nWilliam Hartowidjojo")
+                Text("Developed by: \nArkent Nathanael as iOS Developer \nDave Andersen as Android Developer \nWilliam Hartowidjojo as UI Designer")
                 
                 Spacer()
                     .frame(height:300)
