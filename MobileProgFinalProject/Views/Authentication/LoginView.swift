@@ -163,7 +163,7 @@ struct LoginForm: View {
                 .padding(.right, 40)
             }
             Spacer()
-                .frame(height: 60)
+                .frame(height: 40)
             
 
             NavigationLink(destination: TabBar(), isActive: $goToHome) {
