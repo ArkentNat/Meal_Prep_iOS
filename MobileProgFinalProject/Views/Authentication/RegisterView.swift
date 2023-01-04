@@ -10,11 +10,22 @@ import SwiftUI
 struct RegisterView: View {
     @State var email: String = ""
     @State var password: String = ""
+    @State var confirmPassword: String = ""
     @State private var goToLogin = false
     
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 0) {
+
+                HStack {
+                    Spacer()
+                    Image("register")
+                        .resizable()
+                        .frame(width: 300, height: 300, alignment: .center)
+                    Spacer()
+                }
+
+           
                 Text("Email Address")
                     .foregroundColor(.gray)
                     .padding(.left, 40)

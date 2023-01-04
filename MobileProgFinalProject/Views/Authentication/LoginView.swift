@@ -58,8 +58,10 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                Spacer()
-                    .frame(height: 100)
+                Image("login")
+                    .resizable()
+                    .frame(width: 400, height: 250)
+
                 Button("Continue with Facebook") {
                     
                 }
@@ -80,8 +82,8 @@ struct LoginView: View {
                 }
                 LoginForm()
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            //.padding(.left, 50)
+            .offset(y: -70)
+
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
@@ -99,6 +101,8 @@ struct LoginForm: View {
     @State var email: String = ""
     @State var password: String = ""
     @State private var goToHome = false
+    @State private var showAlert = false
+    @State private var alertMessage = ""
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
@@ -129,7 +133,7 @@ struct LoginForm: View {
             HStack {
                 Image(systemName: "lock")
 
-                SecureInputView("Your Email Address", text: self.$password)
+                SecureInputView("Your Password", text: self.$password)
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled(true)
             }
@@ -159,15 +163,25 @@ struct LoginForm: View {
                 .padding(.right, 40)
             }
             Spacer()
-                .frame(height: 100)
+                .frame(height: 60)
             
 
             NavigationLink(destination: TabBar(), isActive: $goToHome) {
                 Button("Login") {
-                    if(email == "arkent.nathanael@student.sgu.ac.id") && (password == "pass123") {
+                    if(email == "example@example.com") && (password == "pass123") {
                         goToHome = true
+                    } else if (email == "") || (password == "") {
+                        showAlert = true;
+                        alertMessage = "One of the fields is empty"
+                    } else {
+                        showAlert = true;
+                        alertMessage = "Email/Password is incorrect or not found!"
+                        password = ""
                     }
 
+                }
+                .alert(alertMessage, isPresented: $showAlert) {
+                    Button("OK", role: .cancel) {}
                 }
                 .buttonStyle(SecondaryButtonStyle())
             }

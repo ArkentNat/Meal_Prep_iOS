@@ -26,6 +26,14 @@
 		02705DC7292C8EFC00213DE4 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02705DC6292C8EFC00213DE4 /* Tabs.swift */; };
 		02AED0D52963CCCE003DCE64 /* HomeCategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0D42963CCCE003DCE64 /* HomeCategoryItem.swift */; };
 		02AED0D72963D04D003DCE64 /* HomeCategoryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0D62963D04D003DCE64 /* HomeCategoryDetail.swift */; };
+		02AED0D92964358B003DCE64 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0D82964358B003DCE64 /* ProfileView.swift */; };
+		02AED0DC2964568C003DCE64 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0DB2964568C003DCE64 /* CircleImage.swift */; };
+		02AED0DE29645BC4003DCE64 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0DD29645BC4003DCE64 /* Users.swift */; };
+		02AED0E129647030003DCE64 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0E029647030003DCE64 /* EditProfileView.swift */; };
+		02AED0E32964841E003DCE64 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0E22964841E003DCE64 /* SearchView.swift */; };
+		02AED0E529648429003DCE64 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0E429648429003DCE64 /* FavoriteView.swift */; };
+		02AED0E7296492F6003DCE64 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0E6296492F6003DCE64 /* SettingsView.swift */; };
+		02AED0EA296513C1003DCE64 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AED0E9296513C1003DCE64 /* AboutView.swift */; };
 		02BB5D62294B61B800E7F7D9 /* HomeCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB5D61294B61B800E7F7D9 /* HomeCategoryRow.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +58,14 @@
 		02705DC6292C8EFC00213DE4 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		02AED0D42963CCCE003DCE64 /* HomeCategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryItem.swift; sourceTree = "<group>"; };
 		02AED0D62963D04D003DCE64 /* HomeCategoryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryDetail.swift; sourceTree = "<group>"; };
+		02AED0D82964358B003DCE64 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		02AED0DB2964568C003DCE64 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		02AED0DD29645BC4003DCE64 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		02AED0E029647030003DCE64 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		02AED0E22964841E003DCE64 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		02AED0E429648429003DCE64 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		02AED0E6296492F6003DCE64 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		02AED0E9296513C1003DCE64 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		02BB5D61294B61B800E7F7D9 /* HomeCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +123,7 @@
 			children = (
 				02705DA5292C734900213DE4 /* Meal.swift */,
 				02705DA7292C735E00213DE4 /* ModelData.swift */,
+				02AED0DD29645BC4003DCE64 /* Users.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,6 +147,7 @@
 		02705DA0292C720D00213DE4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				02AED0DA29645681003DCE64 /* Helper */,
 				02705DBA292C7DFF00213DE4 /* Main */,
 				02705DB3292C7D8E00213DE4 /* Authentication */,
 				02705D91292C702800213DE4 /* ContentView.swift */,
@@ -152,8 +170,12 @@
 			isa = PBXGroup;
 			children = (
 				02705DC1292C821C00213DE4 /* HomeCategory */,
+				02AED0DF29647022003DCE64 /* Profile */,
 				02705DBB292C7E1000213DE4 /* TabBar.swift */,
 				02705DBF292C803100213DE4 /* HomeView.swift */,
+				02AED0D82964358B003DCE64 /* ProfileView.swift */,
+				02AED0E22964841E003DCE64 /* SearchView.swift */,
+				02AED0E429648429003DCE64 /* FavoriteView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -169,6 +191,32 @@
 				02705DC6292C8EFC00213DE4 /* Tabs.swift */,
 			);
 			path = HomeCategory;
+			sourceTree = "<group>";
+		};
+		02AED0DA29645681003DCE64 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				02AED0DB2964568C003DCE64 /* CircleImage.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		02AED0DF29647022003DCE64 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				02AED0E029647030003DCE64 /* EditProfileView.swift */,
+				02AED0E6296492F6003DCE64 /* SettingsView.swift */,
+				02AED0E82965139D003DCE64 /* Settings */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		02AED0E82965139D003DCE64 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				02AED0E9296513C1003DCE64 /* AboutView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AED0E129647030003DCE64 /* EditProfileView.swift in Sources */,
 				02BB5D62294B61B800E7F7D9 /* HomeCategoryRow.swift in Sources */,
 				02705DBE292C7E1E00213DE4 /* ForgetPasswordView.swift in Sources */,
 				02705DBC292C7E1000213DE4 /* TabBar.swift in Sources */,
@@ -250,15 +299,22 @@
 				02705DA2292C725600213DE4 /* ViewRouter.swift in Sources */,
 				02705DC0292C803100213DE4 /* HomeView.swift in Sources */,
 				02AED0D52963CCCE003DCE64 /* HomeCategoryItem.swift in Sources */,
+				02AED0E7296492F6003DCE64 /* SettingsView.swift in Sources */,
 				02705DA8292C735E00213DE4 /* ModelData.swift in Sources */,
+				02AED0E32964841E003DCE64 /* SearchView.swift in Sources */,
 				02705DC7292C8EFC00213DE4 /* Tabs.swift in Sources */,
+				02AED0D92964358B003DCE64 /* ProfileView.swift in Sources */,
 				02705DB7292C7DD100213DE4 /* LandingPageView.swift in Sources */,
+				02AED0DE29645BC4003DCE64 /* Users.swift in Sources */,
 				02705DC3292C823700213DE4 /* HomeCategory.swift in Sources */,
 				02705DB9292C7DE900213DE4 /* RegisterView.swift in Sources */,
 				02AED0D72963D04D003DCE64 /* HomeCategoryDetail.swift in Sources */,
+				02AED0EA296513C1003DCE64 /* AboutView.swift in Sources */,
+				02AED0DC2964568C003DCE64 /* CircleImage.swift in Sources */,
 				02705D92292C702800213DE4 /* ContentView.swift in Sources */,
 				02705D90292C702800213DE4 /* MobileProgFinalProjectApp.swift in Sources */,
 				02705DC5292C837500213DE4 /* HomeCategoryColumn.swift in Sources */,
+				02AED0E529648429003DCE64 /* FavoriteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MobileProgFinalProject/Preview Content\"";
+				DEVELOPMENT_TEAM = P57NRL78MM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -416,6 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MobileProgFinalProject/Preview Content\"";
+				DEVELOPMENT_TEAM = P57NRL78MM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

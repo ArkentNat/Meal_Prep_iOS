@@ -17,11 +17,11 @@ struct TabBar: View {
                 case .home:
                     HomeView()
                 case .search:
-                    Text("Search")
+                    SearchView()
                 case .favorite:
-                    Text("Favorite")
+                    FavoriteView()
                 case .profile:
-                    Text("Profile")
+                    ProfileView()
                 }
                 Spacer()
                 HStack {
@@ -57,9 +57,10 @@ struct TabBar: View {
                 .frame(width: geometry.size.width, height: geometry.size.height/9)
                 .background(Color.white).shadow(radius: 2)
             }
-            .edgesIgnoringSafeArea(.bottom)
+            .edgesIgnoringSafeArea(.all)
         }
     }
+        
 }
 
 struct TabBar_Previews: PreviewProvider {

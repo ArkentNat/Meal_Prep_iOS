@@ -56,8 +56,11 @@ struct LandingPage: View {
     var body: some View {
         NavigationView {
             VStack(){
+                Image("landingpage")
+                    .resizable()
+                    .frame(width: 280, height: 280)
                 Spacer()
-                    .frame(height: 330)
+                    .frame(height: 30)
                 Text("Eat Healthy").font(.largeTitle).bold()
                 Spacer()
                     .frame(height: 20)
@@ -91,6 +94,7 @@ struct LandingPage: View {
                 }
             }
         }
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
 }
